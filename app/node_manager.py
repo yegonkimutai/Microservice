@@ -10,7 +10,6 @@ def start_node():
     if os.path.exists(PID_FILE):
         return {"status": "started"}
 
-    # Launch platform-specific command
     if platform.system() == 'Windows':
         proc = subprocess.Popen(['bash', 'scripts/fake_node.sh'], creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
 

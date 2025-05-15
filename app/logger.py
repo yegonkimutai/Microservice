@@ -1,5 +1,4 @@
 import logging
-from datetime import datetime
 
 LOG_FILE = 'logs/node_agent.log'
 
