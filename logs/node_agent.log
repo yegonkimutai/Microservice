@@ -1,0 +1,221 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN chmod +x scripts/fake_node.sh
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+2025-05-14 12:45:18,499 - INFO - start -> {'status': 'started', 'pid': 14344}
+2025-05-14 12:45:20,526 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:45:21,533 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:45:21,537 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:47:44,200 - INFO - start -> {'status': 'started', 'pid': 15104}
+2025-05-14 12:47:46,224 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:47:47,229 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:47:47,234 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:50:39,345 - INFO - start -> {'status': 'started', 'pid': 13356}
+2025-05-14 12:50:41,353 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:50:42,358 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:50:42,362 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:51:35,841 - INFO - start -> {'status': 'started', 'pid': 7576}
+2025-05-14 12:51:37,854 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:51:38,863 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:51:38,871 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:54:33,435 - INFO - start -> {'status': 'started', 'pid': 14944}
+2025-05-14 12:54:35,457 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:54:36,464 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:54:36,467 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:54:43,046 - INFO - start -> {'status': 'started', 'pid': 9852}
+2025-05-14 12:54:45,054 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:54:46,062 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:54:46,065 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:55:32,661 - INFO - start -> {'status': 'started', 'pid': 20388}
+2025-05-14 12:55:34,682 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:55:35,689 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 12:55:35,693 - INFO - status -> {'status': 'not running'}
+2025-05-14 12:59:27,339 - INFO - start -> {'status': 'started', 'pid': 20988}
+2025-05-14 12:59:29,361 - INFO - status -> {'status': 'running', 'pid': 20988, 'uptime_seconds': 2}
+2025-05-14 12:59:30,374 - INFO - stop -> {'status': 'stopped'}
+2025-05-14 12:59:30,378 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:00:01,053 - INFO - start -> {'status': 'started', 'pid': 6988}
+2025-05-14 13:00:03,061 - INFO - status -> {'status': 'running', 'pid': 6988, 'uptime_seconds': 2}
+2025-05-14 13:00:04,076 - INFO - stop -> {'status': 'stopped'}
+2025-05-14 13:00:04,080 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:25:28,119 - INFO - start -> {'status': 'started', 'pid': 7632}
+2025-05-14 13:25:30,129 - INFO - status -> {'status': 'running', 'pid': 7632, 'uptime_seconds': 2}
+2025-05-14 13:25:31,160 - INFO - stop -> {'status': 'stopped'}
+2025-05-14 13:25:31,170 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:27:17,397 - INFO - start -> {'status': 'ACTIVE', 'pid': 11256}
+2025-05-14 13:27:19,420 - INFO - status -> {'status': 'running', 'pid': 11256, 'uptime_seconds': 2}
+2025-05-14 13:27:20,434 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-14 13:27:20,438 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:28:15,150 - INFO - start -> {'status': 'started'}
+2025-05-14 13:28:17,159 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:28:18,166 - INFO - stop -> {'status': 'not found or already stopped'}
+2025-05-14 13:28:18,170 - INFO - status -> {'status': 'not running'}
+2025-05-14 13:28:33,948 - INFO - start -> {'status': 'ACTIVE', 'pid': 9724}
+2025-05-14 13:28:35,954 - INFO - status -> {'status': 'running', 'pid': 9724, 'uptime_seconds': 2}
+2025-05-14 13:28:36,969 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-14 13:28:36,974 - INFO - status -> {'status': 'not running'}
+2025-05-14 16:23:03,619 - INFO - start -> {'status': 'ACTIVE', 'pid': 19944}
+2025-05-14 16:23:05,991 - INFO - status -> {'status': 'running', 'pid': 19944, 'uptime_seconds': 2}
+2025-05-14 16:23:07,018 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-14 16:23:07,024 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:16:07,499 - INFO - start -> {'status': 'ACTIVE', 'pid': 11756}
+2025-05-15 08:16:09,618 - INFO - status -> {'status': 'running', 'pid': 11756, 'uptime_seconds': 2}
+2025-05-15 08:16:10,644 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:16:10,652 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:18:43,288 - INFO - start -> {'status': 'ACTIVE', 'pid': 17380}
+2025-05-15 08:18:45,342 - INFO - status -> {'status': 'running', 'pid': 17380, 'uptime_seconds': 2}
+2025-05-15 08:18:46,367 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:18:46,375 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:43:03,439 - INFO - start -> {'status': 'ACTIVE', 'pid': 11140}
+2025-05-15 08:43:05,481 - INFO - status -> {'status': 'running', 'pid': 11140, 'uptime_seconds': 2}
+2025-05-15 08:43:06,503 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:43:06,508 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:43:06,519 - INFO - start -> {'status': 'ACTIVE', 'pid': 11800}
+2025-05-15 08:43:07,522 - INFO - start -> {'status': 'started'}
+2025-05-15 08:43:07,557 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:43:07,563 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:43:07,569 - INFO - start -> {'status': 'ACTIVE', 'pid': 12536}
+2025-05-15 08:43:10,581 - INFO - status -> {'status': 'running', 'pid': 12536, 'uptime_seconds': 3}
+2025-05-15 08:43:10,596 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:43:10,600 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:58:09,802 - INFO - start -> {'status': 'ACTIVE', 'pid': 17224}
+2025-05-15 08:58:11,815 - INFO - status -> {'status': 'running', 'pid': 17224, 'uptime_seconds': 2}
+2025-05-15 08:58:12,831 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:58:12,987 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:58:12,992 - INFO - start -> {'status': 'ACTIVE', 'pid': 16220}
+2025-05-15 08:58:14,000 - INFO - start -> {'status': 'started'}
+2025-05-15 08:58:14,018 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:58:14,023 - INFO - status -> {'status': 'not running'}
+2025-05-15 08:58:14,029 - INFO - start -> {'status': 'ACTIVE', 'pid': 14220}
+2025-05-15 08:58:17,206 - INFO - status -> {'status': 'running', 'pid': 14220, 'uptime_seconds': 3}
+2025-05-15 08:58:17,218 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 08:58:17,222 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:31:03,705 - ERROR - start FAILED ->module 'app.logger' has no attribute 'info'
+2025-05-15 09:31:05,731 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:31:06,736 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:31:06,740 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:31:06,743 - ERROR - start FAILED ->module 'app.logger' has no attribute 'info'
+2025-05-15 09:31:07,747 - ERROR - start FAILED ->module 'app.logger' has no attribute 'info'
+2025-05-15 09:31:07,754 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:31:07,761 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:31:07,765 - ERROR - start FAILED ->module 'app.logger' has no attribute 'info'
+2025-05-15 09:31:10,770 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:31:10,774 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:31:10,778 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:43:56,909 - ERROR - start FAILED ->log_action() missing 1 required positional argument: 'result'
+2025-05-15 09:43:58,921 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:43:59,925 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:43:59,929 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:43:59,933 - ERROR - start FAILED ->log_action() missing 1 required positional argument: 'result'
+2025-05-15 09:44:00,935 - ERROR - start FAILED ->log_action() missing 1 required positional argument: 'result'
+2025-05-15 09:44:00,947 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:44:00,954 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:44:00,959 - ERROR - start FAILED ->log_action() missing 1 required positional argument: 'result'
+2025-05-15 09:44:03,964 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:44:03,968 - INFO - stop -> {'status': 'stopped'}
+2025-05-15 09:44:03,972 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:46:43,402 - INFO - start -> Received config: {}
+2025-05-15 09:46:45,472 - INFO - status -> {'status': 'running', 'pid': 1308, 'uptime_seconds': 2}
+2025-05-15 09:46:46,490 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:46:46,502 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:46:46,508 - INFO - start -> Received config: {}
+2025-05-15 09:46:47,518 - INFO - start -> Received config: {}
+2025-05-15 09:46:47,555 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:46:47,561 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:46:47,567 - INFO - start -> Received config: {}
+2025-05-15 09:46:50,577 - INFO - status -> {'status': 'running', 'pid': 14380, 'uptime_seconds': 3}
+2025-05-15 09:46:50,595 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:46:50,599 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:51:56,077 - INFO - start -> {}
+2025-05-15 09:51:58,110 - INFO - status -> {'status': 'running', 'pid': 5596, 'uptime_seconds': 2}
+2025-05-15 09:51:59,132 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:51:59,142 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:51:59,146 - INFO - start -> {}
+2025-05-15 09:52:00,153 - INFO - start -> {}
+2025-05-15 09:52:00,167 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:52:00,172 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:52:00,176 - INFO - start -> {}
+2025-05-15 09:52:03,191 - INFO - status -> {'status': 'running', 'pid': 16760, 'uptime_seconds': 3}
+2025-05-15 09:52:03,203 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:52:03,207 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:55:06,282 - INFO - start -> {'status': 'ACTIVE', 'pid': 10956}
+2025-05-15 09:55:08,301 - INFO - status -> {'status': 'running', 'pid': 10956, 'uptime_seconds': 2}
+2025-05-15 09:55:09,322 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:55:09,327 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:55:09,333 - INFO - start -> {'status': 'ACTIVE', 'pid': 7500}
+2025-05-15 09:55:10,339 - INFO - start -> {'status': 'started'}
+2025-05-15 09:55:10,354 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:55:10,361 - INFO - status -> {'status': 'not running'}
+2025-05-15 09:55:10,367 - INFO - start -> {'status': 'ACTIVE', 'pid': 9656}
+2025-05-15 09:55:13,373 - INFO - status -> {'status': 'running', 'pid': 9656, 'uptime_seconds': 3}
+2025-05-15 09:55:13,387 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 09:55:13,391 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:38:00,540 - INFO - start -> {'status': 'ACTIVE', 'pid': 15896}
+2025-05-15 12:38:03,596 - INFO - status -> {'status': 'running', 'pid': 15896, 'uptime_seconds': 3}
+2025-05-15 12:38:04,634 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:38:04,802 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:38:04,814 - INFO - start -> {'status': 'ACTIVE', 'pid': 21420}
+2025-05-15 12:38:05,824 - INFO - start -> {'status': 'started'}
+2025-05-15 12:38:05,861 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:38:05,872 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:38:05,881 - INFO - start -> {'status': 'ACTIVE', 'pid': 14000}
+2025-05-15 12:38:08,917 - INFO - status -> {'status': 'running', 'pid': 14000, 'uptime_seconds': 3}
+2025-05-15 12:38:08,935 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:38:08,944 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:48:57,979 - INFO - start -> {'status': 'ACTIVE', 'pid': 19996}
+2025-05-15 12:49:00,028 - INFO - status -> {'status': 'running', 'pid': 19996, 'uptime_seconds': 2}
+2025-05-15 12:49:01,057 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:49:01,065 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:49:01,081 - INFO - start -> {'status': 'ACTIVE', 'pid': 20284}
+2025-05-15 12:49:02,087 - INFO - start -> {'status': 'started'}
+2025-05-15 12:49:02,132 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:49:02,144 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:49:02,163 - INFO - start -> {'status': 'ACTIVE', 'pid': 6872}
+2025-05-15 12:49:05,177 - INFO - status -> {'status': 'running', 'pid': 6872, 'uptime_seconds': 3}
+2025-05-15 12:49:05,229 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:49:05,245 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:56:37,800 - INFO - start -> {'status': 'ACTIVE', 'pid': 17596}
+2025-05-15 12:56:41,295 - INFO - status -> {'status': 'running', 'pid': 17596, 'uptime_seconds': 3}
+2025-05-15 12:56:42,338 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:56:42,356 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:56:42,365 - INFO - start -> {'status': 'ACTIVE', 'pid': 21492}
+2025-05-15 12:56:43,374 - INFO - start -> {'status': 'started'}
+2025-05-15 12:56:43,441 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:56:43,483 - INFO - status -> {'status': 'not running'}
+2025-05-15 12:56:43,507 - INFO - start -> {'status': 'ACTIVE', 'pid': 20264}
+2025-05-15 12:56:46,562 - INFO - status -> {'status': 'running', 'pid': 20264, 'uptime_seconds': 3}
+2025-05-15 12:56:46,606 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 12:56:46,626 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:04:47,156 - INFO - start -> {'status': 'ACTIVE', 'pid': 17304}
+2025-05-15 13:04:49,469 - INFO - status -> {'status': 'running', 'pid': 17304, 'uptime_seconds': 2}
+2025-05-15 13:04:50,513 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:04:50,526 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:04:50,541 - INFO - start -> {'status': 'ACTIVE', 'pid': 16740}
+2025-05-15 13:04:51,556 - INFO - start -> {'status': 'started'}
+2025-05-15 13:04:51,720 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:04:51,764 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:04:51,816 - INFO - start -> {'status': 'ACTIVE', 'pid': 16220}
+2025-05-15 13:04:54,848 - INFO - status -> {'status': 'running', 'pid': 16220, 'uptime_seconds': 3}
+2025-05-15 13:04:54,880 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:04:54,898 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:16:24,795 - INFO - start -> {'status': 'ACTIVE', 'pid': 20992}
+2025-05-15 13:16:27,608 - INFO - status -> {'status': 'running', 'pid': 20992, 'uptime_seconds': 2}
+2025-05-15 13:16:28,651 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:16:28,666 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:16:28,679 - INFO - start -> {'status': 'ACTIVE', 'pid': 20228}
+2025-05-15 13:16:29,685 - INFO - start -> {'status': 'started'}
+2025-05-15 13:16:29,755 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:16:29,762 - INFO - status -> {'status': 'not running'}
+2025-05-15 13:16:29,770 - INFO - start -> {'status': 'ACTIVE', 'pid': 22316}
+2025-05-15 13:16:32,791 - INFO - status -> {'status': 'running', 'pid': 22316, 'uptime_seconds': 3}
+2025-05-15 13:16:32,809 - INFO - stop -> {'status': 'INACTIVE'}
+2025-05-15 13:16:32,819 - INFO - status -> {'status': 'not running'}
