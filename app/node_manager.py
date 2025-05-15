@@ -6,9 +6,14 @@ import platform
 
 PID_FILE = 'node_pid.txt'
 
-def start_node():
+def start_node(config=None):
     if os.path.exists(PID_FILE):
         return {"status": "started"}
+     
+    env = os.environ.copy()
+    if config:
+        for k, v in config.items():
+            env[str(k).upper()] = str(v)
 
     if platform.system() == 'Windows':
         proc = subprocess.Popen(['bash', 'scripts/fake_node.sh'], creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
