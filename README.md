@@ -21,6 +21,9 @@
 
 - Python (FastAPI)
 
+## Note
+The Dummy script is located under scripts folder.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Video Demo <a name="live-demo"></a>

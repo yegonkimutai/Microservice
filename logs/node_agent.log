@@ -219,3 +219,5 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 2025-05-15 13:16:32,791 - INFO - status -> {'status': 'running', 'pid': 22316, 'uptime_seconds': 3}
 2025-05-15 13:16:32,809 - INFO - stop -> {'status': 'INACTIVE'}
 2025-05-15 13:16:32,819 - INFO - status -> {'status': 'not running'}
+2025-05-15 21:14:26,876 - INFO - start -> {'status': 'ACTIVE', 'pid': 12484}
+2025-05-15 21:14:29,249 - INFO - status -> {'status': 'running', 'pid': 12484, 'uptime_seconds': 2}
