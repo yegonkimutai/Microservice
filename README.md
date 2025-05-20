@@ -112,6 +112,6 @@ docker run -p 8000:8000 microservice
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Zola Tap.
+I would like to thank Zola.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
